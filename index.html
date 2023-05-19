@@ -5,73 +5,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/bases.css">
-    <link rel="stylesheet" href="styles/head.css">
-    <link rel="stylesheet" href="styles/llamada.css">
-    <link rel="stylesheet" href="styles/planes.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/css/Style.css">
     <title>Home - Estilo Saludable</title>
 </head>
 
 <body>
-    <header class="head container">
-        <img class="head__logo" src="images/logo-estilo.png" alt="Logo de estilo saludable"></img>
-        <nav class="head__navegacion">
-            <ul>
-                <li class="head__enlace"> <a href="#">Inicio</a></li>
-                <li class="head__enlace"> <a href="#">Quienes Somos</a></li>
-                <li class="head__enlace"> <a href="#">Planes Personalizados</a></li>
-                <li class="head__enlace"> <a href="#">Nutricionista Online</a></li>
-                <li class="head__enlace"> <a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="portada">
+            <!-- <img class="portada__logo" src="/Imagenes/logo-estilo.png" alt="Logo de estilo saludable"></img> -->
+        <div class="container">
+            <nav class="nav">         
+                <a href="#" class="nav__items">Inicio</a>
+                <a href="#quienessomos" class="nav__items">Quienes Somos</a>
+                <a href="#planes" class="nav__items">Planes</a>
+                <a href="#consultaonline" class="nav__items">Consulta Online</a>
+                <a href="/Contacto.html" target="_blank" class="nav__items">Contacto</a>
+            </nav>
+
+            <section class="portada__texto">
+                <h1 class="portada__title">NUTRICION INTEGRAL</h1>
+                <h2 class="portada__subtitle">Brindamos planes de nutrición y entrenamiento para reestablecer la salud y el bienestar</h2>
+
+               <button class="portada__boton"> <a href="#planes">Conozca los planes</a></button>
+                </div>
+            </section>
+        </div>
+        <div class="portada__estilo" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
+
     <main>
-        <section class="llamada container">
-            <h1 class="llamada__titulo">Atencion personalizada</h1>
-            <p class="llamada__texto">Estilo saludable Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                placeat rem maxime tenetur magnam totam. Maiores sed, earum vero quaerat qui dolores iusto odit
-                voluptatibus non magni voluptates molestiae doloremque?</p>
-            <a class="llamada__boton boton" href="#">Conozca los planes</a>
+        <section class="quienessomos container">
+            <h2 class="quienessomos subtitle"> <a name="quienessomos">Quienes somos</a></h2>
+            <div class="quienessomos__text">
+                <p class="quienessomos__parrafo">Somos un equipo interdisciplinario de profesionales calificados y especializados en Nutrición Clínica y Deportiva dispuestos a asesorar a nuestros pacientes de manera personalizada y responsable.
+                    <br><br>
+                Actualmente se observa un grave problema en la alimentación mundial, ya sea por exceso o déficit, y a pesar de la gran información que hay sobre este tema en diversos medios, no hay mejoras en los indicadores globales. 
+                <br><br>
+                Somos conscientes de que la nutrición adecuada es esencial para la salud y calidad de vida de las personas. 
+                <br><br>
+                Es por este motivo que nuestro abordaje es sumamente integral, acompañando al paciente para poder alcanzar su bienestar físico, psicológico y emocional.
+                </p>    
+                <br><br>
+                <p class="quienessomos__parrafo2">Estamos para acompañarte para poder alcanzar tus objetivos!
+                </p>
+            </div>
         </section>
-        <section class="planes container">
-            <h2 class="planes__titulo">Planes</h2>
-            <ul class="planes__tarjetas">
-                <li class="tarjetas tarjetas--start">
-                    <h3 class="tarjetas__titulo">Deportistas</h3>
-                    <articule class="tarjetas__contenido">
-                        <p class="tarjetas__precio"><em>$ 500</em></p>
-                        <p class="tarjetas__texto">1 descripcion</p>
-                        <p class="tarjetas__texto">2 descripcion</p>
-                        <p class="tarjetas__texto">3 descripcion</p>
-                        <a href="#" class="tarjetas__boton tarjetas__boton--start boton">Asignar plan</a>
-                    </articule>
-                </li>
-                <li class="tarjetas tarjetas--ultra">
-                    <h3 class="tarjetas__titulo">Descenso de peso</h3>
-                    <articule class="tarjetas__contenido">
-                        <p class="tarjetas__precio"><em>$ 1500</em></p>
-                        <p class="tarjetas__texto">1 descripcion</p>
-                        <p class="tarjetas__texto">2 descripcion</p>
-                        <p class="tarjetas__texto">3 descripcion</p>
-                        <a href="#" class="tarjetas__boton tarjetas__boton--ultra boton">Asignar plan</a>
-                    </articule>
-                </li>
-                <li class="tarjetas tarjetas--mega">
-                    <h3 class="tarjetas__titulo">Vegetariano</h3>
-                    <articule class="tarjetas__contenido">
-                        <p class="tarjetas__precio"><em>$ 1500</em></p>
-                        <p class="tarjetas__texto">1 descripcion</p>
-                        <p class="tarjetas__texto">2 descripcion</p>
-                        <p class="tarjetas__texto">3 descripcion</p>
-                        <a href="#" class="tarjetas__boton tarjetas__boton--mega boton">Asignar plan</a>
-                    </articule>
-                </li>
-            </ul>
+
+        <section class="planes">
+            <h2 class="planes subtitle"><a name="planes">Nuestros Planes</a></h2>
+            <div class="container__items">
+                <div class="item">   
+                    <figure>
+                        <img src="/Imagenes/Descenso de peso.jpg" alt="plan descenso" class="img">
+                    </figure>
+                     <div class="planes__info">
+                        <h3 class="planes__title">Descenso de Peso</h3>
+                          <p>Este plan está diseñado con una selección de alimentos bajos en grasas y calorías, pero rico en nutrientes escenciales para lograr bajar de peso en forma saludable</p>
+                          <!-- <p> Incluye:</p>
+                            <ul>
+                              <li>Planificación semanal de alimentación y entrenamiento</li>
+                              <li>Ideas de menú semanal</li>
+                              <li>Guía con herramientas para lograr un cambio de hábitos</li>
+                            </ul> -->
+                            <br><br>
+                            <button> <a href="/Descensodepeso.html" target="_blank">Acceder al plan</a></button>
+                     </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="/Imagenes/Aumento MMusc.jpg" alt="aumento masa muscular" class="img">
+                    </figure>
+                     <div class="planes__info">
+                        <h3 class="planes__title">Aumento Masa Muscular</h3>
+                          <p>La elección de alimentos debe complementarse a la rutina de ejercicios para potenciar sus beneficios y lograr los objetivos deseados. Este plan está diseñado para aumentar tu masa muscular de manera saludable y efectiva</p>
+                          <!-- <p>Incluye:</p>
+                            <ul>
+                              <li>Planificación semanal de alimentación y entrenamiento</li>
+                              <li>Ideas de menú semanal</li>
+                              <li>Suplementación</li>  
+                            </ul> -->
+                            <br>
+                            <button> <a href="/MasaMuscular.html" target="_blank">Acceder al plan</a></button>
+                     </div>   
+                </div>       
+                <div class="item">             
+                    <figure>
+                        <img src="/Imagenes/Deportistas.jpg" alt="Deportistas" class="img">
+                    </figure>
+                     <div class="planes__info">
+                        <h3 class="planes__title">Deportistas</h3>
+                          <p>Quienes realizan actividades deportivas tienen necesidades nutricionales especiales debido a su alta carga de entrenamiento. Este plan está diseñado para proporcionar los nutrientes necesarios para una recuperación adecuada y para mejorar el rendimiento durante la actividad</p>
+                          <!-- <p> Incluye:</p>
+                            <ul>
+                              <li>Planificación semanal de alimentación para pre y post entrenamiento</li>
+                              <li>Ideas de menú semanal</li>
+                              <li>Suplementación</li>
+                            </ul> -->
+                            <button> <a href="/Deportistas.html" target="_blank">Acceder al plan</a></button>
+                     </div>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="/Imagenes/Vegetariano.jpg" alt="Vegetarianos" class="img">
+                    </figure>
+                     <div class="planes__info">
+                        <h3 class="planes__title">Vegetariano</h3>
+                          <p>Este plan está diseñado para asegurarte los nutrientes esenciales que no pueden faltar en tu alimentación. Además incluye cuáles son las mejores formas de preparación para lograr una nutrición completa </p>
+                          <!-- <p>Incluye:</p>
+			                <ul>
+				              <li>Planificación semanal de alimentación</li>
+				              <li>Ideas de menú semanal</li>
+				              <li>Guía para compra de alimentos esenciales y sus formas de preparación  </li>
+			                </ul> -->
+                            <br><br>
+                            <button> <a href="/Vegetariano.html" target="_blank">Acceder al plan</a></button>
+                     </div>
+                </div>        
+            </div>
+        </section>
+        <br><br>
+
+        <section class="consultaonline__container">     
+            <h2 class="consultaonline subtitle"> <a name="consultaonline">Consulta Online</a></h2>
+              <article class="consultaonline__item">
+                <figure class="consultaonline__img">
+                    <img src="/Imagenes/atencion online3.jpg" alt="consultaonline__foto" class="consultaonline__foto">
+                </figure>
+               <p class="consultaonline__parrafo">Tenés la posibilidad de recibir atención personalizada con nuestro equipo de profesionales.
+                </p>
+                <button class="consultaonline"> <a href="/Formulario.html" target="_blank">Turnos - Consulta online</a></button>
+              </article>  
         </section>
     </main>
+    <footer>
+        <div class="container__footer">
+                <h2 class="footer__title"> Contáctanos</h2>
+        </div>
+        
+        <div class="footer__icons">
+            <a href="https://facebook.com/" class="boton-facebook"> <a><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" class="boton-twitter"> <a><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://whatsapp.com" class="boton-whatsapp"><a><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="copyright">
+            <p> © 2023 Estilo Saludable - Todos los derechos reservados</p> 
+        </div>
+
+        <div class="nav"> 
+            <nav class="nav__footer">           
+                    <a href="#" class="nav__footer">Inicio</a>
+                    <a href="#quienessomos" class="nav__footer">Quienes Somos</a>
+                    <a href="#planes" class="nav__footer">Planes</a>
+                    <a href="#consultaonline" class="nav__footer">Consulta Online</a>
+                    <a href="/Contacto.html" target="_blank" class="nav__footer">Contacto</a>
+            </nav>       
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/f717467ff1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+ 
+
+
