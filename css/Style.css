@@ -1,175 +1,139 @@
 :root {
-    --background:linear-gradient(135deg, #5e75db7e 0%, #4c2d6b98 100%);
+    --background: linear-gradient(135deg, #5e75db7e 0%, #4c2d6b98 100%);
     --color-primary: #667eea;
     --color-secondary: #764ba2;
     --boton-padding: 20px 40px;
 }
 
 body {
-    font-family:'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.container{
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 80px 0px;
-    max-width: 1200px;
+.container {
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.subtitle{
+.subtitle {
     color: var(--color-primary);
     font-size: 2.5rem;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
 }
-
-.portada{
-    height: 100vh;
-    background-image: var(--background), url(/Imagenes/Portada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-}
-
-.portada .container{
-    padding: 0;
-    display:flex;
-    flex-direction:column;
-}
-
-
 
 /* Estilos para celulares */
 
 @media (max-width: 600px) {
-    header .container .nav{
+    header .container .nav {
         flex-direction: column;
     }
 }
+
 @media (max-width:600px) {
-    .portada__title {
-        font-size: 24px;
+
+    .quienessomos__parrafo,
+    .quienessomos__parrafo2 {
+        font-size: 0.875rem;
     }
-    .portada__subtitle {
-        font-size: 16px;
-    }
-    .portada__boton{
-        font-size: 14px;
-    }
-    .quienessomos__parrafo, .quienessomos__parrafo2 {
-        font-size: 14px;
-    }
-    .planes{
+
+    .planes {
         flex-direction: column;
     }
-    .planes__title{
-        font-size: 14px;
-    }
-    .planes__info p {
-        font-size: 14px;
-    }
-    .consultaonline__parrafo{
-        font-size: 14px;
-    }
-    .footer__title{
-        font-size: 20px;
-    }
-    .nav__footer{
-        font-size: 14px;
-    }
-}
 
-/* Estilos para Tablets y pc */
-
-@media (min-width: 1400px) {
-    header .container .portada__estilo .nav{
-    flex-direction: column;
-}
-}
-
-@media (min-width: 1400px) {
-    .portada__title{
-        font-size: 48px;
-    }
-    .portada__subtitle {
-        font-size: 24px;
-    }
-    .portada__boton{
-        font-size: 18px;
-    }
-    .quienessomos__parrafo, .quienessomos__parrafo2 {
-        font-size: 16px;
-    }
     .planes__title {
-        font-size: 32px;
+        font-size: 0.875rem;
     }
-    .planes__info p{
-        font-size: 16px;
+
+    .planes__info p {
+        font-size: 0.875rem;
     }
-    .consultaonline__parrafo{
-        font-size: 16px;
+
+    .consultaonline__parrafo {
+        font-size: 0.875rem;
     }
-    .footer__title{
-        font-size: 24px;
+
+    .footer__title {
+        font-size: 1.25rem;
     }
-    .nav__footer{
-        font-size: 16px;
+
+    .nav__footer {
+        font-size: 0.875rem;
     }
+}
+
+
+.head {
+    color: #c7f0dd;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    position: absolute;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-end;
-    height: 70 px;
-    align-items: center;
-    font-size: x-large;
-    font-weight: 400;
+    text-align: center;
 }
 
 .nav__items {
-    color: #c7f0dd;
-    text-decoration: none;
-    margin-right: 25px;
-    padding: 10x 20px;
-    font-weight: inherit;
-    margin-top: 25px;
+    font-size: 1.1em;
+
+    display: inline-block;
+
+    margin-right: .7em;
+    margin-bottom: .7em;
+    margin-left: .7em;
 }
 
-.portada__boton, .planes__boton, .consultaonline__boton {
+
+.portada {
+    background-image: var(--background),
+        url(/Imagenes/Portada.jpg);
+    background-size: cover;
+    padding-top: 8.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c7f0dd;
+    text-align: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.texto__portada {
+    padding-bottom: 3em;
+    font-size: 16px;
+}
+
+
+.portada__boton,
+.planes__boton,
+.consultaonline__boton {
     border: 1.5px solid #fff;
 }
 
-.portada__estilo {
-    display: flex;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
+.portada__logo {
+    width: 30%;
+    margin-bottom: 1em;
 }
 
-/* .portada__logo {
-    margin-left: 20px;
-    margin-top: 20px;
-} */
-
-.portada__title{
-    font-size: 4rem;
+.portada__title {
+    font-size: 3.25em;
+    font-weight: 700;
+    text-transform: uppercase;
     color: #7ae4d7;
-    margin-top: 90px;
-    text-align: center;
-    width: 100%;
+    margin-bottom: .5rem;
 }
 
 .portada__subtitle {
     color: #fff;
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin: 50px 0;
-    text-align: center;
-    width: 100%;
+    font-size: 1.25em;
+    line-height: normal;
+    margin: 0 auto 2.5em;
 }
 
 .portada__boton {
@@ -177,10 +141,17 @@ body {
     background: #fff;
     padding: var(--boton-padding);
     color: var(--color-primary);
-    text-decoration:none;
+    font-size: 1.5em;
+    text-decoration: none;
     border-radius: 40px;
-    font-size:x-large;
-    margin-left: 450px;
+}
+
+.portada__estilo {
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6.25em;
 }
 
 button {
@@ -189,19 +160,49 @@ button {
     padding: var(--boton-padding);
     color: var(--color-primary);
     text-align: center;
-    text-decoration:none;
-    font-size:x-large;
+    text-decoration: none;
+    font-size: x-large;
     border-radius: 400px;
 }
 
-a, button{
+a,
+button {
     text-decoration: none;
     color: var(--color-primary);
 }
 
+/* Sección responsive head y portada*/
+@media (max-width: 900px) {
+
+    .head,
+    .texto__portada {
+        font-size: 14px;
+    }
+
+    .portada__logo {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+    }
+
+    .head,
+    .texto__portada {
+        font-size: 13px;
+    }
+
+    .portada__logo {
+        width: 30%;
+    }
+}
+
+
 /* Quienes Somos */
 
-.quienessomos{
+.quienessomos {
     min-height: 80px;
     margin-top: 20px;
     justify-items: center;
@@ -209,7 +210,7 @@ a, button{
     background: linear-gradient(135deg, #eef8f7 100%, #b9f1f8 0%);
 }
 
-.quienessomos .subtitle{
+.quienessomos .subtitle {
     margin-bottom: 20px;
     margin-top: 0;
     line-height: 1.5;
@@ -227,6 +228,7 @@ a, button{
     color: #187964;
 
 }
+
 .quienessomos__parrafo2 {
     margin-bottom: 20px;
     margin-top: 0;
@@ -240,10 +242,11 @@ a, button{
 
 /* contenido planes*/
 
- img{
+img {
     max-width: 100%;
 }
-.item img{
+
+.item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -251,7 +254,7 @@ a, button{
     transition: all .5s;
 }
 
-.planes .subtitle{
+.planes .subtitle {
     margin-top: 100px;
     margin-bottom: 70px;
     line-height: 1.5;
@@ -259,7 +262,7 @@ a, button{
     text-align: center;
 }
 
-.container__items{
+.container__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -270,20 +273,20 @@ a, button{
     background-color: #e9f3fa;
 }
 
-.item:hover{
+.item:hover {
     box-shadow: 0 20px 30px rgba(2, 19, 16, 0.2);
     color: #1d8b7d;
 }
 
-.item figure{
+.item figure {
     overflow: hidden;
 }
 
-.item:hover img{
+.item:hover img {
     transform: scale(1.2);
 }
 
- .planes__info{
+.planes__info {
     margin: 30px 30px 50px 50px;
     margin-bottom: 70px;
     line-height: 1.2;
@@ -292,7 +295,8 @@ a, button{
     text-align: center;
     color: #18145798;
 }
-.planes__title{
+
+.planes__title {
     text-align: center;
     color: #9251bd;
     font-size: 1.75rem;
@@ -301,27 +305,27 @@ a, button{
 }
 
 ul {
-list-style-type: none;
+    list-style-type: none;
 }
 
 .planes__info button {
-    display:inline-block;
+    display: inline-block;
     background: #c2d3f1;
     padding: 10px 20px;
-    text-decoration:none;
+    text-decoration: none;
     border-radius: 40px;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #030122;
-    }
+}
 
-button:hover{
-    color:#d326b6;
+button:hover {
+    color: #d326b6;
     cursor: pointer;
 }
 
-a:hover{
-     color:#d326b6;
+a:hover {
+    color: #d326b6;
 }
 
 a .title {
@@ -331,21 +335,22 @@ a .title {
 
 /* Consulta Online */
 
-.consultaonline__container{
+.consultaonline__container {
     padding-top: 0;
     text-align: center;
     margin-top: 100px;
 }
-.consultaonline__foto{
+
+.consultaonline__foto {
     width: 350px;
     height: 250px;
     border-radius: 10%;
     margin-bottom: 10px;
     object-fit: cover;
     transition: all .5s;
-    }
+}
 
-.consultaonline__foto:hover{
+.consultaonline__foto:hover {
     transform: scale(1.2);
     box-shadow: 0 20px 30px rgba(2, 19, 16, 0.2);
     color: #1d8b7d;
@@ -360,7 +365,7 @@ a .title {
     text-align: center;
 }
 
-.consultaonline__parrafo{
+.consultaonline__parrafo {
     margin: 30px 30px 50px 50px;
     margin-bottom: 70px;
     line-height: 1.2;
@@ -371,13 +376,13 @@ a .title {
 }
 
 button .consultaonline {
-    display:inline-block;
+    display: inline-block;
     background: #cee5f5;
     padding: 10px 20px;
     color: var(--color-primary);
-    text-decoration:none;
+    text-decoration: none;
     border-radius: 40px;
-    font-size:2rem;
+    font-size: 2rem;
     align-items: center;
     justify-items: center;
     cursor: pointer;
@@ -385,17 +390,17 @@ button .consultaonline {
 
 /* Footer */
 
-footer{
+footer {
     background-color: var(--color-primary);
 }
 
-.container__footer{
+.container__footer {
     display: grid;
-    grid-template-columns:auto;
+    grid-template-columns: auto;
     margin: 60px;
 }
 
-.footer__title{
+.footer__title {
     font-weight: 400;
     color: #fff;
     text-decoration: none;
@@ -405,7 +410,7 @@ footer{
     margin-top: 50px;
 }
 
-.footer__icons{
+.footer__icons {
     display: flex;
     justify-content: center;
 }
@@ -424,13 +429,13 @@ footer{
 }
 
 
-.nav__footer{
+.nav__footer {
     color: #c7f0dd;
     text-decoration: none;
     padding: 10px;
     font-weight: inherit;
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     font-weight: 400;
     font-size: 1rem;
 }
