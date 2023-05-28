@@ -94,6 +94,8 @@ body {
     background-image: var(--background),
         url(/Imagenes/Portada.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     padding-top: 8.25em;
     display: flex;
     flex-direction: column;

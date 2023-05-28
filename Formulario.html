@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,600&display=swap"
+        rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/styleconsultaonline.css">
@@ -15,80 +16,55 @@
 </head>
 
 <body>
-    <header class="portada">
-            <!-- <img class="portada__logo" src="/Imagenes/logo-estilo.png" alt="Logo de estilo saludable"></img> -->
-        <div class="container">
-            <nav class="nav">         
-                <a href="#" class="nav__items">Inicio</a>
-                <a href="#" class="nav__items">Quienes Somos</a>
-                <a href="#" class="nav__items">Planes</a>
-                <a href="#consultaonline" class="nav__items">Consulta Online</a>
-                <a href="#" class="nav__items">Contacto</a>
-            </nav>
+    <div class="content">
 
-            <section class="portada__texto">
-                <h1 class="portada__title">NUTRICION INTEGRAL</h1>
-                <h2 class="portada__subtitle">Brindamos planes de nutrición y entrenamiento para reestablecer la salud y el bienestar</h2>
-               <button class="portada__boton"><a href="#planes">Conozca los planes</a></button>
-                </div>
-            </section>
+        <h1 class="logo">Contacto</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contacto para consulta online</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="nombre_completo">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Numero de telefono</label>
+                        <input type="tel" name="numero_telefono">
+                    </p>
+                    <p>
+                        <label>Fecha de consulta</label>
+                        <input type="text" name="fecha_consulta">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Información</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección</li>
+                    <li><i class="fas fa-phone"></i> (011) 12456789</li>
+                    <li><i class="fas fa-envelope-open-text"></i> estilo@gmail.com</li>
+                </ul>
+                <p>Ante cualquier duda, no dude en consultarnos!</p>
+                <p>Estilo Saludable</p>
+            </div>
         </div>
-        <div class="portada__estilo" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
-    </header>
 
-    <main>
+    </div>
 
-        <section class="consultaonline__container">    
-
-            <h2 class="consultaonline subtitle"> <a name="consultaonline">Consulta Online</a></h2>
-              <br><br> 
-            <p class="consultaonline__parrafo">Complete sus datos, elija una fecha probable y nos comunicaremos para coordinar un turno</p>
-              <br><br><br>
-           <article class="consultaonline__form">
-           <form>
-            <label for="Nombre">Nombre:</label> 
-            <input type="text" id="Nombre" name="nombre" required>
-            <br><br>
-            <label for="Apellido">Apellido:</label>
-            <input type="text" id="Apellido" name="apellido" required>
-            <br><br>
-            <label for="email"> E-mail :</label>
-            <input type="email" id="email" name="enmail" required>
-            <br><br><br>
-            <label for="fecha">Elija una fecha para el turno:</label>
-            <input type="date" id="fecha" name="fecha">
-            <br><br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-           </form>
-           </article>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container__footer">
-                <h2 class="footer__title">Contáctanos</h2>
-        </div>        
-        <div class="footer__icons">
-            <a href="https://facebook.com" class="boton-facebook"> <a><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com" class="boton-twitter"> <a><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://whatsapp.com" class="boton-whatsapp"><a><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-        <div class="copyright">
-            <p> © 2023 Estilo Saludable - Todos los derechos reservados</p> 
-        </div>
-            </section>
-        <div class="nav__footer"> 
-            <nav class="nav">         
-                    <a href="#" class="nav__footer">Inicio</a>
-                    <a href="#" class="nav__footer">Quienes Somos</a>
-                    <a href="#" class="nav__footer">Planes</a>
-                    <a href="#consultaonline" class="nav__footer">Consulta Online</a>
-                    <a href="#contacto" class="nav__footer">Contacto</a>      
-            </nav>       
-        </div>
-    </footer>
     <script src="https://kit.fontawesome.com/f717467ff1.js" crossorigin="anonymous"></script>
 </body>
 
