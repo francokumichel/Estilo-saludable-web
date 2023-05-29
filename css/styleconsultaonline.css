@@ -94,7 +94,7 @@ ul {
     outline: 0;
 }
 
-/* CONTACT INFO */
+/* Información de contacto */
 .contact-info {
     background: linear-gradient(135deg, #eef8f7 100%, #b9f1f8 0%);
 }
@@ -106,7 +106,7 @@ ul {
     margin: 0 0 1rem 0;
 }
 
-/* LARGE SIZE */
+/* Parte responsiva */
 @media(min-width: 700px) {
     body {
         padding: 0 4em;

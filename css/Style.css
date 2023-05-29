@@ -392,52 +392,43 @@ button .consultaonline {
 
 /* Footer */
 
-footer {
-    background-color: var(--color-primary);
-}
-
-.container__footer {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 60px;
-}
-
-.footer__title {
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.75rem;
-    margin-bottom: 30px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.footer__icons {
+.footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.footer__social {
+    display: inline-flex;
     justify-content: center;
 }
 
-.footer__icons i {
-    font-size: 30px;
-    padding: 0 20px;
-    color: #fff;
-}
-
-
-.copyright {
-    color: #fff;
-    text-align: center;
-    margin-top: 100px;
-}
-
-
-.nav__footer {
-    color: #c7f0dd;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: inherit;
+.footer__midia {
     display: flex;
-    justify-content: flex-end;
-    font-weight: 400;
-    font-size: 1rem;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 2rem 1rem;
+}
+
+.footer__navegacion {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.footer__enlace {
+    display: inline-block;
+    color: #ffffff;
+
 }
